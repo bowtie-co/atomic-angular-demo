@@ -7,15 +7,21 @@ import { FormsModule } from '@angular/forms'
 
 import { InMemoryDataService } from './services/InMemoryData/in-memory-data.service'
 import { AppRoutingModule } from './app-routing.module'
-import { AppComponent } from './app.component'
 
-import { imports } from './app.imports'
-import { declarations } from './app.declarations'
+const imports = [
+  BrowserModule,
+  AppRoutingModule,
+  FormsModule,
+  NgbModule,
+  HttpClientModule,
+  // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
+  // and returns simulated server responses.
+  // Remove it when a real server is ready to receive requests.
+  HttpClientInMemoryWebApiModule.forRoot(
+    InMemoryDataService, { dataEncapsulation: false }
+  )
+]
 
-@NgModule({
-  declarations,
-  imports,
-  providers: [],
-  bootstrap: [AppComponent]
-})
-export class AppModule { }
+export {
+  imports
+}
