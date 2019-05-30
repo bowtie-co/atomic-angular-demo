@@ -68,6 +68,7 @@ export class ResultsComponent implements OnInit {
     this.resultService.addResult({ racerId, place, time } as Result)
       .subscribe(result => {
         this.results.push(result)
+        this.getTableData()
       })
   }
 
