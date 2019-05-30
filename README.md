@@ -34,7 +34,7 @@ make start
 make rebuild
 ```
 
-4. Navigate to `http://localhost:4200/`
+4. Navigate to [http://localhost:4200/](http://localhost:4200/)
 
 
 ## Docker
@@ -59,7 +59,7 @@ docker-compose build
 docker-compose run atomic-angular-demo npm install
 ```
 
-4. Navigate to `http://localhost:4200/`
+4. Navigate to [http://localhost:4200/](http://localhost:4200/)
 
 ## Non-Docker
 
@@ -81,13 +81,13 @@ npm start
 npm install
 ```
 
-4. Navigate to `http://localhost:4200/`
+4. Navigate to [http://localhost:4200/](http://localhost:4200/)
 
 ## Default
 
 ### Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server. Navigate to [http://localhost:4200/](http://localhost:4200/). The app will automatically reload if you change any of the source files.
 
 ### Code scaffolding
 
