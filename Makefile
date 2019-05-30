@@ -36,8 +36,8 @@ sh:
 bash:
 	docker-compose run -l traefik.enable=false --rm $(project_name) bash
 
-# lint:
-# 	docker-compose run -l traefik.enable=false --rm $(project_name) npm run lint
+lint:
+	docker-compose run -l traefik.enable=false --rm $(project_name) npm run lint
 
 test:
 	docker-compose run -l traefik.enable=false --rm -e NODE_ENV=test -e CI=true $(project_name) npm test
