@@ -12,7 +12,7 @@ services:
       - '.:/usr/src/app'
       - type: volume
         source: nodemodules
-        target: /usr/src/app/app/node_modules
+        target: /usr/src/app/node_modules
         volume:
           nocopy: true
       - type: volume
