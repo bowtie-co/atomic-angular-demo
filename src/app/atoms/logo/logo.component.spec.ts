@@ -2,8 +2,8 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { LogoComponent } from './logo.component';
 
-import { imports } from '../../app.imports'
-import { declarations } from '../../app.declarations'
+import { imports } from '../../app.imports';
+import { declarations } from '../../app.declarations';
 
 describe('LogoComponent', () => {
   let component: LogoComponent;

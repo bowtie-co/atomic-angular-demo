@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Racer } from '../../classes/racer'
-import { RacerService } from '../../services/racer/racer.service'
+import { Racer } from '../../classes/racer';
+import { RacerService } from '../../services/racer/racer.service';
 import { Result } from 'src/app/classes/result';
 import { ResultService } from 'src/app/services/result/result.service';
 
@@ -10,25 +10,25 @@ import { ResultService } from 'src/app/services/result/result.service';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
-  racers: Racer[] = []
-  results: Result[] = []
+  racers: Racer[] = [];
+  results: Result[] = [];
 
   constructor(
     private racerService: RacerService,
     private resultService: ResultService) { }
 
   ngOnInit() {
-    this.getRacers()
+    this.getRacers();
   }
 
   getRacers(): void {
-    this.resultService.getResults().subscribe(results=> {
-      this.results = results.slice(0, 3)
+    this.resultService.getResults().subscribe(results => {
+      this.results = results.slice(0, 3);
       this.results.map(result => {
-        const id = result.racerId
-        this.racerService.getRacer(id).subscribe(racer => this.racers.push(racer))
-      })
-    })
+        const id = result.racerId;
+        this.racerService.getRacer(id).subscribe(racer => this.racers.push(racer));
+      });
+    });
   }
 
   // getRacers(): void {

@@ -10,7 +10,7 @@ import { Location } from '@angular/common';
   styleUrls: ['./racer-detail.component.scss']
 })
 export class RacerDetailComponent implements OnInit {
-  @Input() racer: Racer
+  @Input() racer: Racer;
 
   constructor(
     private Route: ActivatedRoute,
@@ -19,19 +19,19 @@ export class RacerDetailComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.getRacer()
+    this.getRacer();
   }
 
   getRacer(): void {
-    const id = +this.Route.snapshot.paramMap.get('id')
-    this.racerService.getRacer(id).subscribe(racer => this.racer = racer)
+    const id = +this.Route.snapshot.paramMap.get('id');
+    this.racerService.getRacer(id).subscribe(racer => this.racer = racer);
   }
 
   goBack(): void {
-    this.location.back()
+    this.location.back();
   }
 
   save(): void {
-    this.racerService.updateRacer(this.racer).subscribe(() => this.goBack())
+    this.racerService.updateRacer(this.racer).subscribe(() => this.goBack());
   }
 }

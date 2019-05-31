@@ -10,7 +10,7 @@ export class NavLinkGroupComponent implements OnInit {
     { path: '/dashboard', name: 'Dashboard' },
     { path: '/racers', name: 'Racers' },
     { path: '/results', name: 'Results' }
-  ]
+  ];
   constructor() {}
 
   ngOnInit() {}

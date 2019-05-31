@@ -2,8 +2,8 @@ import { TestBed } from '@angular/core/testing';
 
 import { RacerService } from './racer.service';
 
-import { imports } from '../../app.imports'
-import { declarations } from '../../app.declarations'
+import { imports } from '../../app.imports';
+import { declarations } from '../../app.declarations';
 
 describe('RacerService', () => {
   beforeEach(() => TestBed.configureTestingModule({imports, declarations}));

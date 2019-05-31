@@ -6,8 +6,8 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./nav-link.component.scss']
 })
 export class NavLinkComponent implements OnInit {
-  @Input('path') path: string
-  @Input('name') name: string
+  @Input() path: string;
+  @Input() name: string;
 
   constructor() { }
 
