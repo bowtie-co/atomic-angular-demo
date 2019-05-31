@@ -2,4 +2,6 @@
 
 npm install
 
+npm test
+
 npm run build:prod
