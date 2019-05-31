@@ -17,10 +17,10 @@ phases:
       - make lint
       - make test
 
-  # post_build:
-  #   commands:
-  #     - make cc-after
-  #     - deploy-ecs
+  post_build:
+    commands:
+      # - make cc-after
+      - deploy-ecs
 
 cache:
   paths:
