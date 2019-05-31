@@ -2,8 +2,8 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HeadingComponent } from './heading.component';
 
-import { imports } from '../../app.imports'
-import { declarations } from '../../app.declarations'
+import { imports } from '../../app.imports';
+import { declarations } from '../../app.declarations';
 
 describe('HeadingComponent', () => {
   let component: HeadingComponent;

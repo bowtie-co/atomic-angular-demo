@@ -6,9 +6,9 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./top-racer-card.component.scss']
 })
 export class TopRacerCardComponent implements OnInit {
-  @Input('lastName') lastName: string
-  @Input('firstName') firstName: string
-  @Input('id') id: string
+  @Input() lastName: string;
+  @Input() firstName: string;
+  @Input() id: string;
   constructor() { }
 
   ngOnInit() {

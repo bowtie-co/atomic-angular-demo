@@ -3,8 +3,8 @@ import { RouterTestingModule } from '@angular/router/testing';
 
 import { RacerSearchComponent } from './racer-search.component';
 
-import { imports } from '../../app.imports'
-import { declarations } from '../../app.declarations'
+import { imports } from '../../app.imports';
+import { declarations } from '../../app.declarations';
 
 describe('RacerSearchComponent', () => {
   let component: RacerSearchComponent;

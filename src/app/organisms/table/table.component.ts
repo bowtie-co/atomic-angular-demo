@@ -6,10 +6,10 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./table.component.scss']
 })
 export class TableComponent implements OnInit {
-  @Input('columns') columns: any[];
-  @Input('data') data: any[];
-  @Input('linkEach') linkEach: string = '';
-  @Input('linkEachKey') linkEachKey: string = 'id';
+  @Input() columns: any[];
+  @Input() data: any[];
+  @Input() linkEach = '';
+  @Input() linkEachKey = 'id';
   @Output() deleted = new EventEmitter<any>();
 
   constructor() { }
@@ -18,6 +18,6 @@ export class TableComponent implements OnInit {
   }
 
   delete(obj: any): void {
-    this.deleted.emit(obj)
+    this.deleted.emit(obj);
   }
 }

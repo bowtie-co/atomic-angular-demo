@@ -6,25 +6,25 @@ import {
   LogoComponent,
   NavLinkComponent,
   TopRacerCardComponent
-} from './atoms'
+} from './atoms';
 
 import {
   NavLinkGroupComponent,
   RacerSearchComponent
-} from './molecules'
+} from './molecules';
 
 import {
   MessagesComponent,
   NavbarComponent,
   TableComponent
-} from './organisms'
+} from './organisms';
 
 import {
   DashboardComponent,
   RacerDetailComponent,
   RacersComponent,
   ResultsComponent
-} from './ecosystems'
+} from './ecosystems';
 
 const declarations = [
   AppComponent,
@@ -42,8 +42,8 @@ const declarations = [
   HeadingComponent,
   BtnComponent,
   TableComponent
-]
+];
 
 export {
   declarations
-}
+};

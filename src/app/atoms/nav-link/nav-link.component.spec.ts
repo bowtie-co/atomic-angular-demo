@@ -2,8 +2,8 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 
 import { NavLinkComponent } from './nav-link.component';
-import { imports } from '../../app.imports'
-import { declarations } from '../../app.declarations'
+import { imports } from '../../app.imports';
+import { declarations } from '../../app.declarations';
 
 describe('NavLinkComponent', () => {
   let component: NavLinkComponent;

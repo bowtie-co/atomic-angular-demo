@@ -1,12 +1,12 @@
-import { NgModule } from '@angular/core'
-import { Routes, RouterModule } from '@angular/router'
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
 
 import {
   DashboardComponent,
   RacerDetailComponent,
   RacersComponent,
   ResultsComponent
-} from './ecosystems'
+} from './ecosystems';
 
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full'},
@@ -17,7 +17,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)], //Similar to react browser router. Listens to location changes
+  imports: [RouterModule.forRoot(routes)], // Similar to react browser router. Listens to location changes
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

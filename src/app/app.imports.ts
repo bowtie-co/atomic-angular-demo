@@ -1,12 +1,12 @@
-import { BrowserModule } from '@angular/platform-browser'
-import { NgModule } from '@angular/core'
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
-import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api'
-import { HttpClientModule } from '@angular/common/http'
-import { FormsModule } from '@angular/forms'
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
-import { InMemoryDataService } from './services/InMemoryData/in-memory-data.service'
-import { AppRoutingModule } from './app-routing.module'
+import { InMemoryDataService } from './services/InMemoryData/in-memory-data.service';
+import { AppRoutingModule } from './app-routing.module';
 
 const imports = [
   BrowserModule,
@@ -20,8 +20,8 @@ const imports = [
   HttpClientInMemoryWebApiModule.forRoot(
     InMemoryDataService, { dataEncapsulation: false }
   )
-]
+];
 
 export {
   imports
-}
+};
