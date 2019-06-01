@@ -57,7 +57,7 @@ test:
 # ci-test:
 # 	docker-compose -f docker-compose-ci.yml run --rm $(project_name) npm run test
 
-# ci: ci-build ci-install ci-test
+ci: build lint test
 
 # fix:
 # 	docker-compose run -l traefik.enable=false --rm $(project_name) npm run lint:fix
