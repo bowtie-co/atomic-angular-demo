@@ -8,4 +8,4 @@ npm run lint
 
 npm test
 
-npm run build:prod
+npm run build:production
