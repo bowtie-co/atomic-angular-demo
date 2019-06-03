@@ -39,27 +39,12 @@ bash:
 lint:
 	docker-compose run -l traefik.enable=false --rm $(project_name) npm run lint
 
+lint-fix:
+	docker-compose run -l traefik.enable=false --rm $(project_name) npm run lint:fix
+
 test:
 	docker-compose run -l traefik.enable=false --rm -e NODE_ENV=test -e CI=true $(project_name) npm test
 
-# cc-before:
-# 	docker-compose -f docker-compose-ci.yml run --rm -e RAILS_ENV=test $(project_name) bin/cc-test-reporter before-build
-
-# cc-after:
-# 	docker-compose -f docker-compose-ci.yml run --rm -e RAILS_ENV=test $(project_name) bin/cc-test-reporter after-build
-
-# ci-build:
-# 	docker-compose -f docker-compose-ci.yml build
-
-# ci-install:
-# 	docker-compose -f docker-compose-ci.yml run --rm $(project_name) npm install
-
-# ci-test:
-# 	docker-compose -f docker-compose-ci.yml run --rm $(project_name) npm run test
-
 ci: build lint test
-
-# fix:
-# 	docker-compose run -l traefik.enable=false --rm $(project_name) npm run lint:fix
 
 .PHONY: init clean build install lint test
